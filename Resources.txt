@@ -1,0 +1,17 @@
+http://www.asciitable.com/
+http://docs.python.org/3.3/library/subprocess.html#replacing-older-functions-with-the-subprocess-module
+http://docs.python.org/3.3/library/subprocess.html#subprocess.Popen
+
+https://groups.google.com/forum/#!msg/linux.gentoo.user/YbPixhH5iM0/ctmyM2f7josJ bash script using a dictionary file
+
+http://en.wikipedia.org/wiki/Levenshtein_distance
+
+http://docs.python.org/3.3/library/itertools.html
+
+http://travisaltman.com/password-dictionary-generator/ original source
+
+Dictionary generator
+http://www.backtrack-linux.org/forums/showthread.php?t=7698
+http://www.backtrack-linux.org/forums/showthread.php?t=10805 this is pretty much the travisaltman code but it doesn't test the pwd as well
+http://www.backtrack-linux.org/forums/showthread.php?t=2929
+
