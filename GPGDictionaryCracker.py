@@ -1,5 +1,8 @@
 #from http://travisaltman.com/password-dictionary-generator/
 
+## TODO
+# 
+
 import subprocess
 import sys
 import getopt
@@ -86,7 +89,7 @@ def CrackGPG(inputfile,outputdecryptedfile,outputpassphrasefile):
                     f.write("passphrase is:"+passphrase) 
                     print("The passphrase is -->"+passphrase+ "\n" + stderroutput)
                     f.close()
-                    sys.exit() 
+                    sys.exit(1) 
             exitcode=output.poll() #without calling poll or communicate the exit code will be 
             if exitcode==0:
                 print("The passphrase is "+passphrase)
