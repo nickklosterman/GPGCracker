@@ -22,12 +22,14 @@ def CrackGPG(inputfile,outputdecryptedfile,outputpassphrasefile):
     # Numbers = 48 - 57
     # Capital = 65 - 90
     # Lower = 97 - 122
+    lowspecchars = range(32,48)
+    midspecchars = range(58,65)
     majorchars = range(32,126)
     numb = range(48,58)
     cap = range(65,91)
     low = range(97,123)
     choice = 0
-    while int(choice) not in range(1,9):
+    while int(choice) not in range(1,11):
         choice = input('''
         1) Numbers
         2) Capital Letters
@@ -37,6 +39,8 @@ def CrackGPG(inputfile,outputdecryptedfile,outputpassphrasefile):
         6) Numbers + Capital Letters + Lowercase Letters
         7) Capital Letters + Lowercase Letters
         8) Major Chars from ascii(32) to ascii(126)
+        9) Low Special Chars from ascii(32) to ascii(48)
+        10) Low and Mid Special Chars 
         : ''')
 
     choice = int(choice)
@@ -62,6 +66,11 @@ def CrackGPG(inputfile,outputdecryptedfile,outputpassphrasefile):
         poss += low
     elif choice == 8:
         poss += majorchars
+    elif choice == 9:
+        poss += lowspecchars
+    elif choice == 10:
+        poss += lowspecchars
+        poss += midspecchars
 
 
 

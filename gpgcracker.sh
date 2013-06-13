@@ -1,6 +1,8 @@
 #!/bin/bash
 #
 
+# to speed things up I could attempt to break up the input words file and use parallels. 
+
 output="/tmp/decrypted_file";
 
 if [ -e ${output} ]
